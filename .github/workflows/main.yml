@@ -1,8 +1,10 @@
-name: Docker Image for Tempo
+name: Build and Publish
 
 on:
+  # run it on push to the default repository branch
   push:
     branches: [master]
+  # run it during pull request
 
 env:
   # Use docker.io for Docker Hub if empty
