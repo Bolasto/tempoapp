@@ -2,7 +2,7 @@ name: Docker Image for Tempo
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [master]
 
 env:
   # Use docker.io for Docker Hub if empty
