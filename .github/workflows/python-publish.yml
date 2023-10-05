@@ -14,9 +14,8 @@ jobs:
   build_and_publish:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
     - name: Build and push the image
-      uses: actions/setup-python@v3
+    - uses: actions/checkout@v3
     - run:
        docker login --username bolasto --password ${{ secrets.TEMPO_PY }}
        docker build . --tag ghcr.io/bolasto/tempoapp:latest
